@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: povarss/python-backend
+          image: povarss/python-backend:v3
           ports:
             - containerPort: 8080
