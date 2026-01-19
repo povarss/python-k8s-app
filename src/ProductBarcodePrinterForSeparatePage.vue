@@ -313,21 +313,23 @@ export default {
                         padding-left: var(--left-padding) !important;
                         /* Використовуємо auto для ширини, щоб врахувати відступи */
                         width: auto !important; 
-                        /* Розраховуємо висоту з урахуванням вертикальних відступів */
-                        height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin)) !important;
-                        max-height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin)) !important;
-                        min-height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin)) !important;
+                        /* Розраховуємо висоту з урахуванням вертикальних відступів і віднімаємо 1px для запобігання переповнення */
+                        height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin) - 1px) !important;
+                        max-height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin) - 1px) !important;
+                        min-height: calc(var(--page-height) - var(--top-margin) - var(--bottom-margin) - 1px) !important;
                         box-sizing: border-box !important;
                         position: relative !important;
                         display: flex !important;
                         flex-direction: column !important;
                         break-after: page !important;
+                        page-break-after: always !important;
                         break-inside: avoid !important;
                         overflow: hidden !important;
                         visibility: visible !important;
                     }
                     .price-print-barcode:last-child {
                         break-after: auto !important;
+                        page-break-after: auto !important;
                     }
                 }
             `;
