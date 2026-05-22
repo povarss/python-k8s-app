@@ -1,0 +1,18 @@
+{
+  "total": 1000,
+  "by_source": {
+    "FL.ru": 206,
+    "Kwork": 31,
+    "ЄДР ФОП (data.gov.ua)": 763
+  },
+  "output": "/workspace/ukraina_biznesy_sait_500usd_leads.xlsx",
+  "stats": {
+    "FL.ru": 214,
+    "Kwork": 84,
+    "Freelancehunt": 0,
+    "Work.ua": 0,
+    "Weblancer": 0,
+    "Prom.ua": 0,
+    "ЄДР ФОП": 763
+  }
+}
